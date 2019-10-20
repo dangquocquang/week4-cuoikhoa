@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeFromCart } from '../../actions/cart-actions';
-import "./styles.css";
+import "./miniCart.css";
 
 class MiniCart extends Component {
   static propTypes = {

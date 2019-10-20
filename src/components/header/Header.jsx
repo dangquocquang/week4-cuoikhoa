@@ -87,15 +87,15 @@ class Header extends Component {
                         <a href="#">Pages</a>
                         <ul className="submenu">
                           <li>
-                            <NavLink exact activeClassName="active" to="/about">
+                            <NavLink active ClassName="active" exact to="/about">
                               About Us
                             </NavLink>
                           </li>
                           <li>
-                            <a>login</a>
+                            <NavLink to="/login">login</NavLink>
                           </li>
                           <li>
-                            <a>Register</a>
+                          <NavLink to="/register">register</NavLink>
                           </li>
                           <li>
                             <a>Shoping Cart</a>

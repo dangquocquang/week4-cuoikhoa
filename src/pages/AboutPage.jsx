@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; //ES6
 
 export default class AboutPage extends Component {
   render() {
