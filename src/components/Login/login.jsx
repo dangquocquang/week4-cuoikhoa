@@ -1,5 +1,5 @@
 import React from "react";
-import "./login.css"
+import styles from './login.css.js';
 
 function Login(props) {
 
@@ -10,7 +10,7 @@ function Login(props) {
 
   return (
     // giao dien cua trang Login
-    <div className="login_wrapper">
+    <div style={styles.login_wrapper}>
       Giao dien Login
       <form onSubmit={loginFunc}>
         <label>Username : </label> <br></br>

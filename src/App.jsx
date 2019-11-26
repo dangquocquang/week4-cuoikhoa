@@ -24,7 +24,9 @@ class App extends Component {
       axios
         .get('https://mapi.sendo.vn/mob/product/cat/usb/?p=1')
         .then((response) => {
-          const ketquaTimKiem = response.data.data.find(ele => ele.id === parseInt(idSanPham,10));
+          const ketquaTimKiem = response.data.data.find(
+            (ele) => ele.id === parseInt(idSanPham, 10)
+          );
           // console.log('ket qua sp tu productDetail', ketquaTimKiem);
           this.setState({ ketqua: ketquaTimKiem });
         })
@@ -38,7 +40,10 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/products/:id" component={ProductsPage} />
-            <Route path="/products" component={ProductsPage} />
+            <Route
+              path="/products"
+              render={(propsOfRouter) => <ProductsPage {...propsOfRouter} />}
+            />
             <Route path="/contact" component={ContactPage} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />

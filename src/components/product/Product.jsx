@@ -5,7 +5,8 @@ import store from '../../store';
 import { addToCart } from '../../actions/cart-actions';
 
 export default class Product extends Component {
-  handleCartClick = () => {
+  handleCartClick = (e) => {
+    e.preventDefault();
     console.log('add to cart');
     store.dispatch(addToCart(this.props));
   };
@@ -22,7 +23,7 @@ export default class Product extends Component {
               <img className="secondary-img" src={img_url_mob} alt={name} />
             </a>
             <div className="product-action text-center">
-              <a href="_blank" title="Shoppingb Cart" onClick={this.handleCartClick}>
+              <a href="_blank" title="Shoppingb Cart" onClick={(e)=>this.handleCartClick(e)}>
 
                 <i className="fas fa-shopping-cart" />
               </a>

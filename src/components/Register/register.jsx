@@ -1,5 +1,5 @@
 import React from "react";
-import "./register.css";
+import styles from "./register.css.js";
 
 function Register (props) {
     const loginFunc = (giatri) => {
@@ -8,7 +8,8 @@ function Register (props) {
     }
 
   return (
-    <div className = "register_dangky">
+     <div style={styles.register_dangky}>
+     {/* <div className="register_dangky"> */}
       Giao dien dang ky
       <form onSubmit={loginFunc}>
         <label>Email : </label> <br></br>

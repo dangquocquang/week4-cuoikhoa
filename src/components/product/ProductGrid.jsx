@@ -65,7 +65,7 @@ export default class ProductGrid extends Component {
           <div className="row mb-10">
             <div className="col-xl-5 col-lg-6 col-md-6">
               <p>{this.state.data}</p>
-              <button onClick={this.getDataFromAPI}>get Data from API</button>
+              {/* <button onClick={this.getDataFromAPI}>get Data from API</button> */}
 
               <div className="product-showing mb-40">
                 <p>Showing 1–22 of 32 results</p>
@@ -100,10 +100,10 @@ export default class ProductGrid extends Component {
               </form>
             </div>
             {/*
-  <div class="shop-widget">
-<h3 class="shop-title">Filter selection</h3>
-<div class="price-filter">
-<div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
+  <div className="shop-widget">
+<h3 className="shop-title">Filter selection</h3>
+<div className="price-filter">
+<div id="slider-range" className="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div className="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
 <input type="text" id="amount">
 </div>
   </div> */}
