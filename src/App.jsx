@@ -37,12 +37,12 @@ class App extends Component {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/" render={(propsOfRouter) => <HomePage {...propsOfRouter} />} />
+            <Route path="/" exact render={(propsOfRouter) => <HomePage {...propsOfRouter} />} />
             <Route path="/about" component={AboutPage} />
             <Route path="/products/:id" component={ProductsPage} />
             <Route
-              exact
               path="/products"
+              exact
               render={(propsOfRouter) => <ProductsPage {...propsOfRouter} />}
             />
             <Route path="/contact" component={ContactPage} />
