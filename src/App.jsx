@@ -37,10 +37,11 @@ class App extends Component {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/" render={(propsOfRouter) => <HomePage {...propsOfRouter} />} />
             <Route path="/about" component={AboutPage} />
             <Route path="/products/:id" component={ProductsPage} />
             <Route
+              exact
               path="/products"
               render={(propsOfRouter) => <ProductsPage {...propsOfRouter} />}
             />
@@ -54,7 +55,7 @@ class App extends Component {
               )}
             />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </>
     );
