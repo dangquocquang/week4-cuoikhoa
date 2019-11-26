@@ -27,9 +27,9 @@ export default class Product extends Component {
 
                 <i className="fas fa-shopping-cart" />
               </a>
-              <a href={`/product-detail/${id}`} >
+              <Link to={`/product-detail/${id}`} >
                 <i className="fas fa-search" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="product-content pr-0">
